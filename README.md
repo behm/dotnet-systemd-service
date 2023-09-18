@@ -1,5 +1,5 @@
 # dotnet-systemd-service
-Create a .NET service that runs on linux and is controlled by systemd
+Create a .NET service that runs on linux and is controlled by Systemd
 
 ## Notes
 This service was created using the .NET 8 preview so steps were taken to create a dev container
@@ -9,6 +9,7 @@ but the Dockerfile and docker-compose.yml setup downloads and installs the .NET 
 When .NET 8 is release in November of this year at dotnet.conf, this sample will be updated to start
 with a .NET 8 runtime instead.
 
+### Dev Container
 The tutorial for installing .NET 8 preview runtime was taken from this blog post by Andy Watt called
 [Getting Started with .NET 8: Seamless Setup with DevContainers](https://betterprogramming.pub/getting-started-with-net-8-seamless-setup-with-devcontainers-13851ee20f4e).  If you don't have an
 account on Medium you are not able to see the entrire blog post but the code can be found on his
@@ -25,6 +26,13 @@ global.json example file
     }
 }
 ```
+
+## Systemd Service
+The tutorial(s) for creating a .NET Systemd Service
+- [Running .NET Core Applications as a Linux Service](https://code-maze.com/aspnetcore-running-applications-as-linux-service/) by Muhammed Saleem
+called Running .NET
+- https://developers.redhat.com/articles/2023/01/17/how-deploy-net-apps-systemd-services-using-containers
+- https://swimburger.net/blog/dotnet/how-to-run-a-dotnet-core-console-app-as-a-service-using-systemd-on-linux
 
 ### Requirements
 
